@@ -133,6 +133,7 @@ var loadingText = document.querySelector("#loading-text");
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
           loadingText.remove();
+          alert("the loading in game will take a while, dont worry it will only happen on the first time you play.")
         }).catch((message) => {
           alert(message);
         });
